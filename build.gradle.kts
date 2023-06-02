@@ -41,8 +41,9 @@ repositories {
 dependencies {
     compileOnly("eu.thesimplecloud.simplecloud:simplecloud-api:2.5.0")
     compileOnly("eu.thesimplecloud.simplecloud:simplecloud-base:2.5.0")
-    compileOnly("eu.thesimplecloud.simplecloud:simplecloud-launcher:2.4.1")
-    compileOnly("eu.thesimplecloud.simplecloud:simplecloud-plugin:2.4.1")
+    compileOnly("eu.thesimplecloud.simplecloud:simplecloud-launcher:2.5.0")
+    compileOnly("eu.thesimplecloud.simplecloud:simplecloud-plugin:2.5.0")
+    compileOnly("eu.thesimplecloud.simplecloud:simplecloud-module-permission:2.5.0")
     compileOnly("me.clip:placeholderapi:2.11.1")
 
     compileOnly("org.spigotmc:spigot-api:1.8.8-R0.1-SNAPSHOT")
