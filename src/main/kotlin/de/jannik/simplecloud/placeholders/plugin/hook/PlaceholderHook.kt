@@ -30,8 +30,8 @@ class PlaceholderHook : PlaceholderExpansion() {
     }
 
     override fun onRequest(player: OfflinePlayer, params: String): String {
-        return if(params == "ONLINE_PLAYERS") CloudAPI.instance.getCloudPlayerManager().getNetworkOnlinePlayerCount().get().toString()
-        else if(params == "MAX_PLAYERS") CloudAPI.instance.getCloudPlayerManager().getCloudPlayer(player.uniqueId).get().getConnectedProxy()?.getMaxPlayers().toString()
+        return if(params.equals("ONLINE_PLAYERS", true)) CloudAPI.instance.getCloudPlayerManager().getNetworkOnlinePlayerCount().get().toString()
+        else if(params.equals("MAX_PLAYERS", true)) CloudAPI.instance.getCloudPlayerManager().getCloudPlayer(player.uniqueId).get().getConnectedProxy()?.getMaxPlayers().toString()
         else params
     }
 
