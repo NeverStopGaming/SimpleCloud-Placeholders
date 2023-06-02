@@ -1,0 +1,6 @@
+name: SimpleCloud-Placeholders
+version: 0.1
+authors:
+  - Panda
+  - Jannik
+main: de.jannik.simplecloud.placeholders.plugin.PlaceholdersPlugin
