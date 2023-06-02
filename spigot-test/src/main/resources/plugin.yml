@@ -1,0 +1,5 @@
+name: spigot-test
+version: 1.0
+main: de.jannik.test.Test
+author: Jannik
+description: Test Plugin for Spigot
