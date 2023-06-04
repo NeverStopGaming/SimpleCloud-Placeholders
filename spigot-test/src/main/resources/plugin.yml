@@ -3,3 +3,7 @@ version: 1.0
 main: de.jannik.test.Test
 author: Jannik
 description: Test Plugin for Spigot
+commands:
+  test:
+    description: Test Command
+    usage: /test
