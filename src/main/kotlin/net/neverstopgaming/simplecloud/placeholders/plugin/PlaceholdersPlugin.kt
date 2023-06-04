@@ -1,6 +1,6 @@
-package de.jannik.simplecloud.placeholders.plugin
+package net.neverstopgaming.simplecloud.placeholders.plugin
 
-import de.jannik.simplecloud.placeholders.plugin.hook.PlaceholderHook
+import net.neverstopgaming.simplecloud.placeholders.plugin.hook.PlaceholderHook
 import org.bukkit.plugin.java.JavaPlugin
 
 class PlaceholdersPlugin : JavaPlugin() {

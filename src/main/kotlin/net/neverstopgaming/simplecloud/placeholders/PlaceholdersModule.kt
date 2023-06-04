@@ -1,4 +1,4 @@
-package de.jannik.simplecloud.placeholders
+package net.neverstopgaming.simplecloud.placeholders
 
 import eu.thesimplecloud.api.external.ICloudModule
 
