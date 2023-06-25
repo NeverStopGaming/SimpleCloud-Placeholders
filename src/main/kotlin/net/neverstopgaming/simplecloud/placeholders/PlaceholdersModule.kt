@@ -17,4 +17,3 @@ class PlaceholdersModule : ICloudModule {
 
     override fun isReloadable(): Boolean = false
 }
-
