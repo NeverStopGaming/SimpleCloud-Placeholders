@@ -15,7 +15,7 @@ import java.net.http.HttpRequest
 import java.net.http.HttpResponse
 
 @Command("placeholders", CommandType.CONSOLE_AND_INGAME, "cloud.version")
-object Version : ICommandHandler {
+class Version : ICommandHandler {
 
     @CommandSubPath("version")
     fun handle(sender: ICommandSender) {
@@ -45,4 +45,5 @@ object Version : ICommandHandler {
 
 
     }
+
 }
