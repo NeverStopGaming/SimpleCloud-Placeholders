@@ -1,7 +1,7 @@
 {
   "name": "SimpleCloud-Placeholders",
   "author": "Panda, Jannik",
-  "mainClass": "de.jannik.simplecloud.placeholders.PlaceholdersModule",
+  "mainClass": "net.neverstopgaming.simplecloud.placeholders.PlaceholdersModule",
   "moduleCopyType": "SERVER",
   "repositories": [],
   "dependencies": [],

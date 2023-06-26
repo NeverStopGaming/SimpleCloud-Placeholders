@@ -1,6 +1,7 @@
 name: SimpleCloud-Placeholders
 version: 0.1
+folia-supported: true
 authors:
   - Panda
   - Jannik
-main: de.jannik.simplecloud.placeholders.plugin.PlaceholdersPlugin
+main: net.neverstopgaming.simplecloud.placeholders.plugin.PlaceholdersPlugin
