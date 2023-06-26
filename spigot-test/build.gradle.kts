@@ -16,7 +16,6 @@ repositories {
 }
 
 dependencies {
-    implementation("com.github.ThatKawaiiSam:Assemble:master-SNAPSHOT")
 
     compileOnly("org.spigotmc:spigot-api:1.8.8-R0.1-SNAPSHOT")
     compileOnly("com.github.azbh111:craftbukkit-1.8.8:R")
