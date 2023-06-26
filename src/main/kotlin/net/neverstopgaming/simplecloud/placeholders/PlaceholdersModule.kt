@@ -13,12 +13,12 @@ class PlaceholdersModule : ICloudModule {
 
         Updater
 
-        Launcher.instance.commandManager.registerCommand(this, Version)
+        Launcher.instance.commandManager.registerCommand(this, Version())
     }
 
     override fun onDisable() {
 
     }
 
-    override fun isReloadable(): Boolean = false
+    override fun isReloadable(): Boolean = true
 }
