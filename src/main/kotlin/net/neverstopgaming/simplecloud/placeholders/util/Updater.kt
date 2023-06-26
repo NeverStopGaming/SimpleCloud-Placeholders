@@ -17,7 +17,7 @@ object Updater {
 
     private const val updateServer = "https://update.neverstopgaming.net"
     val gson = Gson()
-    private val httpClient = java.net.http.HttpClient.newHttpClient()
+    public val httpClient = java.net.http.HttpClient.newHttpClient()
 
     private val request =
         HttpRequest.newBuilder(URI("$updateServer/update?plugin=$pluginName")).GET().build()
