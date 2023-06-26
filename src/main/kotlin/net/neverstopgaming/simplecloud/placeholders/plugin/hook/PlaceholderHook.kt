@@ -1,12 +1,12 @@
 package net.neverstopgaming.simplecloud.placeholders.plugin.hook
 
 import eu.thesimplecloud.api.CloudAPI
+import eu.thesimplecloud.base.manager.startup.Manager
 import eu.thesimplecloud.module.permission.PermissionPool
+import eu.thesimplecloud.module.permission.manager.PermissionModule
 import eu.thesimplecloud.plugin.startup.CloudPlugin
 import me.clip.placeholderapi.expansion.PlaceholderExpansion
-import org.bukkit.Bukkit
 import org.bukkit.OfflinePlayer
-import org.bukkit.entity.Player
 
 class PlaceholderHook : PlaceholderExpansion() {
 
@@ -31,6 +31,10 @@ class PlaceholderHook : PlaceholderExpansion() {
     }
 
     override fun onRequest(player: OfflinePlayer, params: String): String {
+
+        if(Manager.instance.cloudModuleHandler.getLoadedModuleByCloudModule(PermissionModule.instance) == null) {
+            if(params.equals("PRIORITY", true) || params.equals("RANK_NAME", true)) return params
+        }
 
         val cloudPlayer = CloudAPI.instance.getCloudPlayerManager().getCloudPlayer(player.uniqueId).getBlockingOrNull() ?: return params
         val permissionPlayer = PermissionPool.instance.getPermissionPlayerManager().getPermissionPlayer(player.uniqueId).getBlockingOrNull() ?: return params
